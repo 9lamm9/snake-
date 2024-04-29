@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/813a01fbc7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+ <section id="header">
+    <a href="#"><img src="2.png" class="logo" alt=""></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a  class="active" href="shop.html">Shop</a></li>
+            <li><a href="about.html">About </a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </div>
+ </section> 
+ <section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+        <img src="wooting_60he_lekker_linear60_keyboard_black_-5.jpg" width="100%" id="mainimg" alt="">
+        <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="wooting boite.jpg" width="100%" class="small-img" alt="">
+            </div>
+            
+            <div class="small-img-col">
+                <img src="wooting_60he_lekker_linear60_keyboard_black_-5.jpg" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="what in the box.jpg" width="100%" class="small-img" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="single-pro-details">
+        <h6>Wooting / Keyboard</h6>
+        <h4>Professional Keyboard</h4>
+        <h2>$179.99</h2>
+        <select>
+            <option>with keycaps</option>
+            <option>without keycaps</option>
+        </select>
+        <input type="number" value="1">
+        <button class="normal">Add To Cart</button>
+        <h4>Details</h4>
+        <span>The Wooting 60HE is an analog mechanical keyboard with <1ms input response. It's packed with features like rapid trigger.</span>
+    </div>
+    
+ </section>
+ <section id="product1" class="section-p1">
+    <h2>Discover More</h2>
+    <p>Buy more thhinks</p>
+    <div class="pro-container">
+        
+        <div class="pro" onclick="window.location.href='sproduct2.html';" >
+            <img src="razer viper.jpg" alt="">
+            <div class="des">
+                <span>razer</span>
+                <h5>razer viper v3 pro</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$159.99</h4>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div><div class="pro">
+            <img src="alienware.jpg" alt="">
+            <div class="des">
+                <span>Alienware</span>
+                <h5>Alienware x16 laptop</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$1200</h4>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div><div class="pro">
+            <img src="hyperx.jpg" alt="">
+            <div class="des">
+                <span>Hyperx</span>
+                <h5>Hyperx cloud 3</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$129.99</h4>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div><div class="pro">
+            <img src="gallery-1-pro-x-tkl-black-lightspeed-gaming-keyboard.png.png" alt="">
+            <div class="des">
+                <span>Logitech</span>
+                <h5>Logitech x superlight keyboard</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$210</h4>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+       
+        
+        
+
+    </div>
+ </section>
+ <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign up for Newsletter</h4>
+        <p>Get e-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <div class="form">
+<input type="text" placeholder="Your email address">
+<button class="normal">Sign up</button>
+    </div>
+ </section>
+ <footer class="section-p1">
+    <div class="col">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> 562 Boujematemim Draria</p>
+        <p><strong>Phone:</strong>+213 555555555</p>
+        <p><strong>Hours:</strong>10:00 - 18:00 </p>
+    </div>
+ </footer>
+ <script>
+ var mainimg = document.getElementById("mainimg");
+ var smallimg = document.getElementsByClassName("small-img");
+
+ smallimg[0].onclick = function(){
+    mainimg.src = smallimg[0].src;
+ }
+ smallimg[1].onclick = function(){
+    mainimg.src = smallimg[1].src;
+ }
+ smallimg[2].onclick = function(){
+    mainimg.src = smallimg[2].src;
+ }
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>
