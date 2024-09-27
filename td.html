@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD N1</title>
+</head>
+<body>
+   
+    
+    
+    <img src="portable.png" alt="">
+    <h1><b>Architecture client /serveur à 3
+        niveaux
+    </b></h1>
+    
+    <h2><b>contenu de l'article</b></h2>
+    <nav>
+    <ul><a href="">presentation de l'architecture à 2 niveaux</a></ul>
+    <ul><a href="">presentation de l'architecture à 3 niveaux</a></ul>
+    <ul><a href="">comparaison des deux types d'architecture</a></ul>
+    <ul><a href="">l'architecture multiniveaux</a></ul>
+     </nav>
+    
+    <section>
+    <h1><b>Presentation de l'architecture a 2 niveaux</b></h1>
+    
+    <p>L'architecture à deux niveaux (aussi appelée architecture 2-tiers) caractérise les systèmes clients/serveurs pour lesquels le client demande une ressource et le serveur la lui fournit directement, en utilisant ses propres ressources. Cela signifie que le serveur ne fait pas appel à une autre application afin de fournir une partie du service.</p>
+    
+    <img src="2-tiers.gif" alt="">
+     </section>
+    <section>
+    <h1><b>Présentation de l'architecture à 3 niveaux</b></h1> 
+    <p>Dans l'architecture à 3 niveaux (appelée architecture 3-tiers), il existe un niveau intermédiaire, c'est-à-dire que l'on a généralement une architecture partagée entre :
+      <ol><p>1. Un client, c'est-à-dire l'ordinateur demandeur de ressources, équipée d'une interface utilisateur (généralement un navigateur web) chargée de la présentation ;</p></ol>
+      <ol><p>2. Le serveur d'application (appelé également middleware), chargé de fournir la ressource mais faisant appel à un autre serveur</p></ol>
+      <ol><p>3. Le serveur de données, fournissant au serveur d'application les données dont il a besoin.</p></ol>
+      Le serveur de données, fournissant au serveur d'application les données dont il a besoin.
+      <ol><p>. Partage d'application entre client, serveur intermédiaire, et serveur d'entreprise ;</p></ol>
+      <ol><p>. Partage d'application entre client, serveur d'application, et serveur de base de données d'entreprise.</p></ol>
+    
+    </p>
+    
+    <img src="3-tiers.gif" alt="">
+</section>
+<section>
+    <h1><b>Comparaison des deux types d'architecture</b></h1>
+    <p>L'architecture à deux niveaux est donc une architecture client/serveur dans laquelle le serveur est polyvalent, c'est-à-dire qu'il est capable de fournir directement l'ensemble des ressources demandées par le client.</p>
+    <p>Dans l'architecture à trois niveaux par contre, les applications au niveau serveur sont délocalisées, c'est-à-dire que chaque serveur est spécialisé dans une tâche (serveur web/serveur de base de données par exemple). L'architecture à trois niveaux permet :</p>
+    <ol>1. Une plus grande flexibilité/souplesse ;</ol>
+    <ol>2. Une sécurité accrue car la sécurité peut être définie indépendamment pour chaque service, et à chaque niveau ;</ol>
+    <ol>3. De meilleures performances, étant donné le partage des tâches entre les différents serveurs.</ol>
+    <h1><b>L'architecture multiniveaux</b></h1>
+    <p>Dans l'architecture à 3 niveaux, chaque serveur (niveaux 2 et 3) effectue une tâche (un service) spécialisée</p>
+    <p>Un serveur peut donc utiliser les services d'un ou plusieurs autres serveurs afin de fournir son propre service. </p>
+    <p>Par conséquent, l'architecture à trois niveaux est potentiellement une architecture à N niveaux...</p>
+    
+    <img src="n-tiers.gif" alt="">
+</section>
+    <footer>
+    <p>pour aller plus loin:<a href="">https://en.wikipedia.org/wiki/Multitier_architecture</a></p>
+    </footer>
+</body>
+</html>
