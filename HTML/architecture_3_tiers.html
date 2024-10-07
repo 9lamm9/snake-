@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+
+<html lang="fr">
+
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Architecture 3 tiers</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="divv">
+	<header>
+        
+	   <img id="pc" src="image/portable.png" alt="image de portable" />
+       <h1>Architecture client/serveur à 3 niveaux</h1>
+	   
+	</header>
+	
+	<nav>
+    	<h2>Contenu de l'article</h2>
+    	<ul>
+    		<li><a href="#p1">Présentation de l'architecture à 2 niveaux</a></li>
+    		<li><a href="#p2">Présentation de l'architecture à 3 niveaux</a></li>
+    		<li><a href="#p3">Comparaison des deux types d'architecture</a></li>
+    		<li><a href="#p4">L'architecture multiniveaux</a></li>
+    	</ul>
+    	
+	</nav>
+	<article>
+        <section>
+            <h2 id="p1">Présentation de l'architecture à 2 niveaux</h2>
+            <p>L'architecture à deux niveaux (aussi appelée architecture 2-tiers) caractérise les systèmes clients/serveurs pour lesquels le client demande une ressource et le serveur la lui fournit directement, 
+            en utilisant ses propres ressources. 
+            Cela signifie que le serveur ne fait pas appel à une autre application afin de fournir une partie du service.</p>
+            
+            <img id="ilu"  src="image/2-tiers.gif" alt="exemple d'architecture 2 tiers" />
+        </section>
+
+        <section>
+            <h2 id="p2">Présentation de l'architecture à 3 niveaux</h2>
+            <p>Dans l'architecture à 3 niveaux (appelée architecture 3-tiers), il existe un niveau intermédiaire, c'est-à-dire que l'on a généralement une architecture partagée entre :</p>
+            <ol>
+                <li>Un client, c'est-à-dire l'ordinateur demandeur de ressources, équipée d'une interface utilisateur (généralement un navigateur web) chargée de la présentation ;</li>
+            </div>
+                <li>Le serveur d'application (appelé également middleware), chargé de fournir la ressource mais faisant appel à un autre serveur</li>
+                <li>Le serveur de données, fournissant au serveur d'application les données dont il a besoin.</li>
+            </ol>
+            <p>Etant donné l'emploi massif du terme d'architecture à 3 niveaux, celui-ci peut parfois désigner aussi les architectures suivantes :</p>
+            <ul>
+                <li>Partage d'application entre client, serveur intermédiaire, et serveur d'entreprise ;</li>
+                <li>Partage d'application entre client, serveur d'application, et serveur de base de données d'entreprise.</li>
+            </ul>
+            
+            <img  id="ilu"  src="image/3-tiers.gif" alt="exemple d'architecture 3 tiers" />
+        </section>
+
+        <section>
+            <h2 id="p3">Comparaison des deux types d'architecture</h2>
+            <p>L'architecture à deux niveaux est donc une architecture client/serveur dans laquelle le serveur est polyvalent, 
+            c'est-à-dire qu'il est capable de fournir directement l'ensemble des ressources demandées par le client.</p>
+            <p>Dans l'architecture à trois niveaux par contre, les applications au niveau serveur sont délocalisées, 
+            c'est-à-dire que chaque serveur est spécialisé dans une tâche (serveur web/serveur de base de données par exemple). L'architecture à trois niveaux permet :</p>
+            <ol>
+                <li>Une plus grande flexibilité/souplesse ;</li>
+                <li>Une sécurité accrue car la sécurité peut être définie indépendamment pour chaque service, et à chaque niveau ;</li>
+                <li>De meilleures performances, étant donné le partage des tâches entre les différents serveurs.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2 id="p4">L'architecture multiniveaux</h2>
+            <p>Dans l'architecture à 3 niveaux, chaque serveur (niveaux 2 et 3) effectue une tâche (un service) spécialisée. 
+            <p>Un serveur peut donc utiliser les services d'un ou plusieurs autres serveurs afin de fournir son propre service.</p> 
+            <p>Par conséquent, l'architecture à trois niveaux est potentiellement une architecture à N niveaux...</p>
+            
+            <img  id="ilu"  src="image/n-tiers.gif" alt="exemple d'architecture n tiers"  />
+         </section>
+         
+            <p id="wikipedia">Pour aller plus loin : <a href="https://en.wikipedia.org/wiki/Multitier_architecture">https://en.wikipedia.org/wiki/Multitier_architecture</a></p>
+    	
+	</article>
+
+</body>
+
+</html>
