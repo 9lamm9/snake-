@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(133, 123, 123);
+    background-image: url(images/bobine-1.gif);
+    background-repeat: no-repeat;
+
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px;
+    background-image: url(images/banniere.jpg);
+    position: sticky;
+    margin-top: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+section h1{
+    color: aliceblue;
+    text-align: center;
+
+}
+section h3{
+    color: aliceblue;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lol{
+    color: rgb(50, 52, 54);
+    text-decoration: none;
+    background-color: rgb(230, 230, 214);
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+#mid{
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: rgb(208, 214, 218);
+    border-radius: 5px;
+}
+
+#kok{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    color: aliceblue;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 90px;
+}
